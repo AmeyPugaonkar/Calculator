@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+
+    <script src="calculator.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <h2 id="name">CALCULATOR</h2>
+        <div id="scontainer" >
+            <div><input type="text" id="result" placeholder="000"></div>
+            <table id="table" >
+                <tr>
+                    <td><button class="operations btn" id="c" onclick="clearAll()">C</button></td>
+                    <td><button class="operations btn" id="ce" onclick="removeLast()">CE</button></td>
+                    <td><button class="operations btn display" id="plus">+</button></td>
+                    <td><button class="operations btn display" id="minus">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="numbers btn display" id="7">7</button></td>
+                    <td><button class="numbers btn display" id="8">8</button></td>
+                    <td><button class="numbers btn display" id="9">9</button></td>
+                    <td><button class="operations btn display" id="multi">&#215;</button></td>
+                </tr>
+                <tr>
+                    <td><button class="numbers btn display" id="4">4</button></td>
+                    <td><button class="numbers btn display" id="5">5</button></td>
+                    <td><button class="numbers btn display" id="6">6</button></td>
+                    <td><button class="operations btn display" id="divide">&#247;</button></td>
+                </tr>
+                <tr>
+                    <td><button class="numbers btn display" id="1" >1</button></td>
+                    <td><button class="numbers btn display" id="2">2</button></td>
+                    <td><button class="numbers btn display" id="3">3</button></td>
+                    <td><button class="operations btn display" id="dot">.</button></td>
+                </tr>
+                <tr>
+                    <td><button class="operations btn display" id="1">(</button></td>
+                    <td><button class="numbers btn display" id="0">0</button></td>
+                    <td><button class="operations btn display" id="1">)</button></td>
+                    <td><button class="operations btn" id="equal" onclick="calculate()">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
