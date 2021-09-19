@@ -29,8 +29,8 @@ function sreenDisplay(element){
 function calculate(){
     let answer = eval(calucateValue);
     document.getElementById("result").value = answer;
-    screenvalue=answer;
-    calucateValue = answer;
+    screenvalue=answer.toString();
+    calucateValue = answer.toString();
 }
 
 // clear the screen
